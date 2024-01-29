@@ -4,6 +4,7 @@ The following features are available:
 * tekton
 * argocd
 * kubernetes dashboard
+* hostpath-storage
 
 # requirements
 
@@ -42,4 +43,15 @@ argocd app create helm-guestbook --repo https://github.com/argoproj/argocd-examp
 Sync the application
 ```
 argocd app sync helm-guestbook
+```
+
+
+# pvc
+
+Default storage path for pvc
+/var/snap/microk8s/common/default-storage
+
+```
+kubectl get pod,pvc
+kubectl describe pv
 ```

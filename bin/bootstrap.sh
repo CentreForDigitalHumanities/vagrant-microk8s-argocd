@@ -20,6 +20,9 @@ snap install microk8s --classic
 /snap/bin/microk8s enable community
 /snap/bin/microk8s enable metallb:192.168.60.100-192.168.60.200
 
+# install https://microk8s.io/docs/addon-hostpath-storage
+/snap/bin/microk8s hostpath-storage
+
 # install kubernetes dashboard
 /snap/bin/microk8s enable dashboard
 # wait until kubernetes dashboard is initialized

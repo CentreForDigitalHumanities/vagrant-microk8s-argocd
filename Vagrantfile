@@ -2,7 +2,7 @@
 unless Vagrant.has_plugin?("vagrant-auto_network")
   raise 'vagrant-auto_network is not installed!'
 end
-AutoNetwork.default_pool = '192.168.60.0/22'
+AutoNetwork.default_pool = '192.168.64.0/22'
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/debian-12"
